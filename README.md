@@ -88,7 +88,8 @@ helm install postgres bitnami/postgresql --version 16.0.3 -n postgres --create-n
 
 This command deploys a standalone PostgreSQL instance in the postgres namespace, with resources tailored for local development and a node selector to ensure it runs on the `node-db` node.
 
-> **Note**: While deploying databases inside a Kubernetes cluster can be complex and challenging for production environments, this setup is suitable for learning purposes. In production, it is recommended to use a managed database service or run the database outside the Kubernetes cluster to ensure better data availability, backup, and disaster recovery capabilities.
+> [!NOTE]
+> While deploying databases inside a Kubernetes cluster can be complex and challenging for production environments, this setup is suitable for learning purposes. In production, it is recommended to use a managed database service or run the database outside the Kubernetes cluster to ensure better data availability, backup, and disaster recovery capabilities.
 
 ### Step 4: Prepare the Frontend and Backend Images
 
